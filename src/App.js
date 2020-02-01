@@ -7,7 +7,7 @@ import Holiday from './Views/Holiday'
 import NoHoliday from './Views/NoHoliday'
 
 
-const CALENDAR = `https://calendarific.com/api/v2/holidays?&api_key=${API_KEY}&country=US&year=2019&month=12&day=25`
+const CALENDAR = `https://calendarific.com/api/v2/holidays?&api_key=${API_KEY}&country=US&year=2019&month=7&day=4`
 
 export default class App extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ export default class App extends Component {
   }
   componentDidMount() {
     axios.get(CALENDAR).then((res) => {
-      console.log(res.data)
+      // console.log(res.data)
       if (res.data.response.holidays.length >= 1) {
         this.setState({
           holiday: res.data.response.holidays
@@ -38,7 +38,7 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.holiday)
+    // console.log(this.state.holiday)
     return (
       <div>
         {this.renderView()}
