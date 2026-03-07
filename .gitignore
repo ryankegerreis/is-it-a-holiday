@@ -1,6 +1,9 @@
 node_modules
 const.js
+.env
 .env.local
 .env*.local
+build/
 dist/
+.vscode/
 .DS_Store
