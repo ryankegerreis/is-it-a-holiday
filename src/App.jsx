@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 import './App.css';
-import { API_KEY } from './const'
-import Holiday from './Views/Holiday'
-import NoHoliday from './Views/NoHoliday'
+import { API_KEY } from './const.jsx'
+import Holiday from './Views/Holiday.jsx'
+import NoHoliday from './Views/NoHoliday.jsx'
 
 const today = new Date()
 const day = today.getDate()
 const month = today.getMonth() + 1
 const year = today.getFullYear()
 
-const CALENDAR = `https://calendarific.com/api/v2/holidays?&api_key=${API_KEY}&country=US&year=2019&month=${month}&day=${day}`
+const CALENDAR = `https://calendarific.com/api/v2/holidays?&api_key=${API_KEY}&country=US&year=${year}&month=${month}&day=${day}`
 
 export default class App extends Component {
   constructor(props) {

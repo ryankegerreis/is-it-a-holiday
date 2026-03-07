@@ -1,6 +1,6 @@
 import React from 'react'
 
-import HolidayInfo from './HolidayInfo'
+import HolidayInfo from './HolidayInfo.jsx'
 
 export default function Holiday(props) {
   return (
