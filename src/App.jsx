@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 import './App.css';
-import { API_KEY } from './const.js'
-import Holiday from './Views/Holiday'
-import NoHoliday from './Views/NoHoliday'
+import { API_KEY } from './const.jsx'
+import Holiday from './Views/Holiday.jsx'
+import NoHoliday from './Views/NoHoliday.jsx'
 
 const today = new Date()
 const day = today.getDate()
