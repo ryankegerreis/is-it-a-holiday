@@ -2,6 +2,8 @@
   "chat.tools.terminal.autoApprove": {
     "npm install": true,
     "cp": true,
-    "mv": true
+    "mv": true,
+    "npm audit": true,
+    "pkill": true
   }
 }
