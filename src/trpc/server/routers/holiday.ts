@@ -1,6 +1,5 @@
 import { createTRPCRouter, publicProcedure } from "~/trpc/init";
 import { z } from "zod";
-import axios from "axios";
 
 interface HolidayResponse {
   response: {
@@ -31,7 +30,12 @@ export const holidayRouter = createTRPCRouter({
     const url = `https://calendarific.com/api/v2/holidays?api_key=${apiKey}&country=US&year=${year}&month=${month}&day=${day}`;
 
     try {
-      const { data } = await axios.get<HolidayResponse>(url);
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = (await response.json()) as HolidayResponse;
+
       return {
         holidays: data.response.holidays,
         isHoliday: data.response.holidays.length >= 1,

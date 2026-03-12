@@ -1,4 +1,5 @@
 import React from "react";
+import { FunnyText } from "./FunnyText";
 
 interface HolidayProps {
   name: string;
@@ -21,7 +22,10 @@ export function Holiday({ name, type }: HolidayProps) {
       </div>
       <div className="text-center mt-8 max-w-md">
         <h3 className="text-2xl font-bold text-white mb-2">About {name}</h3>
-        <h4 className="text-xl text-white">{name} is a {type[0]}.</h4>
+        <h4 className="text-xl text-white mb-6">{name} is a {type[0]}.</h4>
+        <div className="text-xl text-white font-medium italic">
+          <FunnyText isHoliday={true} />
+        </div>
       </div>
     </div>
   );
