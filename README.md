@@ -43,7 +43,7 @@ If you just cloned this repo, follow these steps to get the app running locally:
 
 ## 🛠 Tech Stack
 
-- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js 16.x](https://nextjs.org/) (App Router)
 - **API Layer**: [tRPC](https://trpc.io/) for end-to-end typesafe communication
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
