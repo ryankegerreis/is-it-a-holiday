@@ -39,7 +39,7 @@ If you just cloned this repo, follow these steps to get the app running locally:
 
 ## 📖 About the Project
 
-"Is It A Holiday?" is a simple but effective web application built to demonstrate a clean implementation of the T3 Stack. It provides a visual indicator of whether the current day is a public holiday, accompanied by lighthearted, context-aware messaging.
+"Is It A Holiday?" is a simple but effective web application built to demonstrate a clean implementation of the T3 Stack. The current version renders a playful, static "not a holiday" screen by default, focusing on architecture and developer experience rather than real-time holiday detection.
 
 ## 🛠 Tech Stack
 
