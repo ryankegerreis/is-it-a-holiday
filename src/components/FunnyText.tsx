@@ -35,7 +35,7 @@ export function FunnyText({ isHoliday }: FunnyTextProps) {
     setQuote(randomQuote);
   }, [isHoliday]);
 
-  if (!quote) return <p className="opacity-0">Loading...</p>;
+  if (!quote) return <p className="opacity-0" aria-hidden="true">Loading...</p>;
 
   return <p>{quote}</p>;
 }
