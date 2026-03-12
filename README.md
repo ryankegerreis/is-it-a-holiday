@@ -83,10 +83,9 @@ src/
 ## 🧪 Development
 
 ### tRPC Procedures
-All API procedures are defined in `src/trpc/server/routers/`. To add a new endpoint:
-1. Create/Modify a router in `routers/`.
-2. Connect it to the `appRouter` in `src/trpc/server/root.ts`.
-3. Use the hook in your component: `const data = trpc.router.procedure.useQuery()`.
+All API procedures are defined on the `appRouter` in `src/trpc/server/root.ts`. To add a new endpoint:
+1. Add or modify a procedure on `appRouter` in `src/trpc/server/root.ts`.
+2. Use the generated hook in your component, for example: `const { data } = trpc.someRouter.someProcedure.useQuery()`.
 
 ## 📄 License
 
